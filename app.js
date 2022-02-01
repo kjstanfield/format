@@ -7,7 +7,7 @@ $("#inp").bind("click", function () {
 
   if (rows.length > 1) {
     rows.forEach(function (r) {
-      formatted += `'${r}',\n`;
+      formatted += `'${r.trim()}',\n`;
     });
 
     $("#data").val(formatted.slice(0, -2));
